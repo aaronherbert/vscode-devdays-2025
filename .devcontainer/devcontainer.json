@@ -1,0 +1,24 @@
+{
+  "name": "VSCode DevDays .NET DevContainer",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+ 
+  "forwardPorts": [5000],
+  "features": {"ghcr.io/devcontainers/features/dotnet:1": {
+      "version": "9.0"
+    }},
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "dotnet.defaultSolution": "vscode-devdays-2025.sln"
+      },
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "formulahendry.dotnet-test-explorer",
+        "humao.rest-client"
+      ]
+    }
+  },
+  "postCreateCommand": "dotnet restore"
+}
