@@ -1,0 +1,57 @@
+{
+  "$schema": "https://demotime.show/demo-time.schema.json",
+  "title": "Advanced Demo: TypeScript Function Walkthrough",
+  "description": "A guided demo showing how to add and highlight a new function in a TypeScript file, with themed slides and VS Code integration.",
+  "version": 2,
+  "demos": [
+    {
+      "title": "Introduction Slide",
+      "description": "",
+      "steps": [
+        {
+          "action": "setTheme",
+          "theme": "Default Dark Modern"
+        },
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/intro.md"
+        }
+      ]
+    },
+    {
+      "title": "About me",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/me.md"
+        }
+       ]
+    },
+     {
+      "title": "Extentions",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/extentions.md"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.extensions.search",
+          "args": "c#"
+        }
+       ]
+    },
+    {
+      "title": "Questions",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": ".demo/slides/questions.md"
+        }
+       ]
+    }
+  ]
+}
