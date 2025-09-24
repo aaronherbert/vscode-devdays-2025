@@ -1,0 +1,3 @@
+### Get Weather Forecast
+GET http://localhost:5000/weatherforecast
+Accept: application/json
